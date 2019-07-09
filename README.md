@@ -11,4 +11,5 @@ This is a sample Android navigation app that guides a user to his/her desired de
 * The route is changed once the current location moves to wrong direction.
 
 ## Code Features
+* Uses FusedLocationProviderClient (instead of the deprecated FusedLocationProviderApi) for interacting with the fused location provider.
 * Uses Google Maps API and Directions API.
