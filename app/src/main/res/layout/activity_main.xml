@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGetDirection"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/btnGetDirection"
+        android:text="Get Direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:layout_alignParentBottom="true"
+        android:enabled="false"/>
+
+    <fragment
+        android:id="@+id/mapNearBy"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGetDirection"
+        android:layout_above="@id/btnGetDirection"/>
+
+    <TextView
+        android:id="@+id/txtBegin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/btnGetDirection"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Tap the desired destination on the map to begin."/>
+
+</RelativeLayout>
